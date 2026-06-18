@@ -1,14 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import api from '../../lib/api';
 import { useAuthStore } from '../../store/authStore';
-import {
-  Loader2,
+import {Loader2,
   User,
   Shield,
   Phone,
   Mail,
   Warehouse,
-  Users,
   Crown,
 } from 'lucide-react';
 

@@ -16,7 +16,6 @@ import {
   RotateCcw,
   Smartphone,
 } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
 import api from '../../lib/api';
 
 interface IntakePetani {
@@ -67,7 +66,7 @@ const INTAKE_STATUS_CONFIG = {
 };
 
 const IntakePetaniPage: React.FC = () => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const [intakes, setIntakes] = useState<IntakePetani[]>([]);
   const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState('');

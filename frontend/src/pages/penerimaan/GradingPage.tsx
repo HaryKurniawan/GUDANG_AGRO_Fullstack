@@ -42,7 +42,7 @@ const GradingPage: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
   const [penerimaan, setPenerimaan] = useState<any>(null);
-  const [produkList, setProdukList] = useState<any[]>([]);
+  const [, setProdukList] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
 
   const [gradings, setGradings] = useState<GradingPenerimaan[]>([

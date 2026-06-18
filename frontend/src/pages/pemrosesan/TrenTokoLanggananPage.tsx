@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { useAuthStore } from '../../store/authStore';
@@ -70,12 +70,6 @@ export default function TrenTokoLanggananPage() {
     }
   };
 
-  const getStatusColor = (stok: number, buffer: number) => {
-    if (stok < buffer * 0.5) return 'bg-red-50 border-red-200'; // Kritis
-    if (stok < buffer) return 'bg-orange-50 border-orange-200'; // Perlu produksi
-    if (stok > buffer * 1.5) return 'bg-blue-50 border-blue-200'; // Overstock
-    return 'bg-green-50 border-green-200'; // Aman
-  };
 
   return (
     <div className="space-y-6">
@@ -134,7 +128,6 @@ export default function TrenTokoLanggananPage() {
         <div className="grid grid-cols-1 gap-6">
           {data.map((item) => {
             const isKritis = item.stokGudangSaatIni < item.rekomendasiBufferKg;
-            const cardColor = getStatusColor(item.stokGudangSaatIni, item.rekomendasiBufferKg);
             
             return (
               <div key={item.kodeKomoditasGlobal} className={`bg-white rounded-xl shadow-sm border overflow-hidden ${isKritis ? 'border-orange-200' : 'border-gray-200'}`}>

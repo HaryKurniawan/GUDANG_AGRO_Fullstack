@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import api from '../../lib/api';
 import { getRolePrefix } from '../../lib/rolePathHelper';
 import {
   Store,

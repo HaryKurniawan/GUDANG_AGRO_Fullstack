@@ -24,7 +24,6 @@ const HargaPenerimaanPage: React.FC = () => {
   const [filterKategori, setFilterKategori] = useState('');
 
   const [loading, setLoading] = useState(false);
-  const [syncing, setSyncing] = useState(false);
 
   const fetchData = async () => {
     try {

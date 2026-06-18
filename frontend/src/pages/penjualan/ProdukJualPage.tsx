@@ -64,7 +64,7 @@ interface ModalTambahProps {
   onClose: () => void;
 }
 
-const ModalTambah: React.FC<ModalTambahProps> = ({ komoditas, gudangId, onSuccess, onClose }) => {
+export const ModalTambah: React.FC<ModalTambahProps> = ({ komoditas, gudangId, onSuccess, onClose }) => {
   const [harga, setHarga] = useState(komoditas.harga.toString());
   const [minBeli, setMinBeli] = useState('300');
   const [varian, setVarian] = useState('');

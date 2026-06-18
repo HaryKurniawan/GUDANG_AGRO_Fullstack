@@ -5,10 +5,8 @@ import {
   Package,
   ChevronDown,
   ChevronUp,
-  Leaf,
   CheckCircle2,
   Clock,
-  AlertCircle,
   Filter,
   TrendingDown,
 } from 'lucide-react';
@@ -43,6 +41,10 @@ interface BatchItem {
   susutPersen: number;
   tahap: string;
   statusPenerimaan: string;
+  sortirAt?: string;
+  gradingAt?: string;
+  kemasAt?: string;
+  masukStokAt?: string;
 }
 
 interface Summary {

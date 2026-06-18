@@ -18,7 +18,6 @@ const ProdukCatalogPage: React.FC = () => {
   const [warehouseProducts, setWarehouseProducts] = useState<any[]>([]);
   const [masterProducts, setMasterProducts] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
-  const [pageError, setPageError] = useState('');
   
   // Modal states
   const [modalOpen, setModalOpen] = useState(false);
@@ -31,7 +30,6 @@ const ProdukCatalogPage: React.FC = () => {
   const fetchData = async () => {
     try {
       setLoading(true);
-      setPageError('');
       
       // Fetch warehouse products from /staf endpoint
       const warehouseRes = await api.get('/produk/staf');
@@ -44,8 +42,6 @@ const ProdukCatalogPage: React.FC = () => {
       setMasterProducts(masterRes.data.data || []);
     } catch (err: any) {
       console.error('Failed to fetch data:', err);
-      const errorMsg = err.response?.data?.message || err.message || 'Gagal memuat data';
-      setPageError(errorMsg);
     } finally {
       setLoading(false);
     }

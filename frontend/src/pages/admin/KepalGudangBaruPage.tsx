@@ -1,18 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import {
-  Form,
+import { Form,
   Input,
   Select,
   Button,
   Card,
   Spin,
-  message,
-  Modal,
   Transfer,
   Space,
 } from 'antd';
-import { ChevronLeft, Loader2, AlertCircle, CheckCircle } from 'lucide-react';
+import { ChevronLeft, AlertCircle, CheckCircle } from 'lucide-react';
 import { createKepalGudang, getKepalaPetaniTersedia } from '../../lib/api';
 
 const KepalGudangBaruPage: React.FC = () => {
@@ -23,7 +20,7 @@ const KepalGudangBaruPage: React.FC = () => {
   const [success, setSuccess] = useState('');
   const [kepalaPetaniOptions, setKepalaPetaniOptions] = useState<any[]>([]);
   const [selectedAfiliasiIds, setSelectedAfiliasiIds] = useState<string[]>([]);
-  const [gudangOptions, setGudangOptions] = useState<any[]>([
+  const [gudangOptions] = useState<any[]>([
     { label: 'GDG-BANDUNG-001 - Gudang Pusat Bandung', value: 'gudang-id-1' },
     { label: 'GDG-BOGOR-001 - Gudang Regional Bogor', value: 'gudang-id-2' },
   ]);

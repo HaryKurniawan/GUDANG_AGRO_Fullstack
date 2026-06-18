@@ -41,20 +41,6 @@ interface DemandSignalData {
   data: DemandItem[];
 }
 
-interface PermintaanPengadaan {
-  id: string;
-  komoditasNama: string;
-  targetKg: number;
-  totalKomitmenKg: number;
-  jumlahKepalaPetaniRespon: number;
-  hargaAcuanPerKg: number | null;
-  deadlinePanen: string | null;
-  trendPersen: number | null;
-  trendArah: string | null;
-  status: string;
-  periode: string;
-  createdAt: string;
-}
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────
 const fmtKg = (n: number) => n >= 1000 ? `${(n / 1000).toFixed(1)}t` : `${n.toFixed(1)}kg`;
@@ -62,13 +48,13 @@ const fmtRp = (n: number) => n >= 1_000_000
   ? `Rp ${(n / 1_000_000).toFixed(1)}jt`
   : `Rp ${n.toLocaleString('id-ID')}`;
 
-const STATUS_CONFIG: Record<string, { label: string; color: string }> = {
-  DRAFT:               { label: 'Draft',           color: 'bg-gray-100 text-gray-600' },
-  TERKIRIM:            { label: 'Terkirim',         color: 'bg-blue-100 text-blue-700' },
-  SEBAGIAN_TERPENUHI:  { label: 'Sebagian',         color: 'bg-amber-100 text-amber-700' },
-  TERPENUHI:           { label: 'Terpenuhi',        color: 'bg-green-100 text-green-700' },
-  DIBATALKAN:          { label: 'Dibatalkan',       color: 'bg-red-100 text-red-600' },
-};
+// const STATUS_CONFIG: Record<string, { label: string; color: string }> = {
+//   DRAFT:               { label: 'Draft',           color: 'bg-gray-100 text-gray-600' },
+//   TERKIRIM:            { label: 'Terkirim',         color: 'bg-blue-100 text-blue-700' },
+//   SEBAGIAN_TERPENUHI:  { label: 'Sebagian',         color: 'bg-amber-100 text-amber-700' },
+//   TERPENUHI:           { label: 'Terpenuhi',        color: 'bg-green-100 text-green-700' },
+//   DIBATALKAN:          { label: 'Dibatalkan',       color: 'bg-red-100 text-red-600' },
+// };
 
 // ─── Form Buat Permintaan ─────────────────────────────────────────────────────
 interface FormBuatPermintaanProps {
@@ -612,9 +598,7 @@ const PermintaanPengadaanPage: React.FC = () => {
 
   const [myGudangId, setMyGudangId] = useState<string | null>(null);
   const [demandData, setDemandData] = useState<DemandSignalData | null>(null);
-  const [permintaanList, setPermintaanList] = useState<PermintaanPengadaan[]>([]);
   const [loading, setLoading] = useState(false);
-  const [loadingKirim, setLoadingKirim] = useState<string | null>(null);
   const [activeTab, setActiveTab] = useState<'sinyal' | 'manual' | 'pesanan'>('pesanan');
   const [formItem, setFormItem] = useState<DemandItem | null>(null);
   const [expandedSignal, setExpandedSignal] = useState<string | null>(null);
@@ -653,19 +637,7 @@ const PermintaanPengadaanPage: React.FC = () => {
     }
   }, [myGudangId]);
 
-  const handleKirim = async (id: string) => {
-    setLoadingKirim(id);
-    try {
-      await axios.post(`${API}/permintaan-pengadaan/${id}/kirim`, {}, {
-        headers: { Authorization: `Bearer ${token}` },
-      });
-      fetchPermintaanList();
-    } catch (err: any) {
-      alert(err.response?.data?.error || 'Gagal mengirim');
-    } finally {
-      setLoadingKirim(null);
-    }
-  };
+  // handleKirim removed
 
   const handleFormSuccess = () => {
     setFormItem(null);
