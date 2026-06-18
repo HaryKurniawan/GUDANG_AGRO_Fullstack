@@ -1,0 +1,8 @@
+{
+  "backend/src/**/*.ts": [
+    "eslint --max-warnings 9999 --no-warn-ignored"
+  ],
+  "frontend/src/**/*.{ts,tsx}": [
+    "eslint --max-warnings 9999 --no-warn-ignored"
+  ]
+}

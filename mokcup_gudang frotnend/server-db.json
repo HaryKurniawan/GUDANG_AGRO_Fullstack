@@ -1,0 +1,1730 @@
+{
+  "users": [
+    {
+      "id": "U01",
+      "username": "admin",
+      "passwordHash": "8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918",
+      "fullName": "Budi Santoso",
+      "role": "Admin Gudang"
+    },
+    {
+      "id": "U02",
+      "username": "produksi",
+      "passwordHash": "50e6cec9f5933403dd5462e34c2985be8f46e9ee75cb385e60c87ccbe4b73c9c",
+      "fullName": "Agus Wijaya",
+      "role": "Kepala Produksi"
+    },
+    {
+      "id": "U03",
+      "username": "pimpinan",
+      "passwordHash": "91d962d6a4a4e0d5db257fcbe77ea93d33c18564dd34850aecb8e37deb7d439f",
+      "fullName": "Drs. Hermawan M.T.",
+      "role": "Pimpinan"
+    }
+  ],
+  "orders": [
+    {
+      "id": "ORD-001",
+      "orderDate": "2026-05-24",
+      "commodity": "Wortel",
+      "packaging": "1 Kg",
+      "packageWeight": 1,
+      "quantity": 500,
+      "totalWeight": 500,
+      "status": "Dikirim",
+      "createdAt": "2026-05-24T08:00:00Z"
+    },
+    {
+      "id": "ORD-002",
+      "orderDate": "2026-05-25",
+      "commodity": "Buncis",
+      "packaging": "2.5 Kg",
+      "packageWeight": 2.5,
+      "quantity": 400,
+      "totalWeight": 1000,
+      "status": "Dikirim",
+      "createdAt": "2026-05-25T09:30:00Z"
+    },
+    {
+      "id": "ORD-003",
+      "orderDate": "2026-05-26",
+      "commodity": "Jagung Manis",
+      "packaging": "Custom",
+      "packageWeight": 5,
+      "quantity": 100,
+      "totalWeight": 500,
+      "status": "Selesai",
+      "createdAt": "2026-05-26T10:15:00Z"
+    },
+    {
+      "id": "ORD-004",
+      "orderDate": "2026-05-27",
+      "commodity": "Sayuran Mix",
+      "packaging": "1 Kg",
+      "packageWeight": 1,
+      "quantity": 300,
+      "totalWeight": 300,
+      "status": "Selesai",
+      "createdAt": "2026-05-27T11:00:00Z"
+    },
+    {
+      "id": "ORD-005",
+      "orderDate": "2026-05-27",
+      "commodity": "Wortel",
+      "packaging": "2.5 Kg",
+      "packageWeight": 2.5,
+      "quantity": 100,
+      "totalWeight": 250,
+      "status": "Selesai",
+      "createdAt": "2026-05-27T15:02:08.804Z"
+    },
+    {
+      "id": "ORD-006",
+      "orderDate": "2026-05-27",
+      "commodity": "Wortel, Buncis",
+      "packaging": "Vacuum Nylon Bag Premium (1 Kg)",
+      "packageWeight": 1,
+      "quantity": 250,
+      "totalWeight": 400,
+      "status": "Menunggu Konfirmasi",
+      "createdAt": "2026-05-27T16:15:00.000Z",
+      "customer": "Budi Wijaya (Shopee Agro)",
+      "source": "E-Commerce (Shopee)",
+      "items": [
+        {
+          "commodity": "Wortel",
+          "packaging": "Vacuum Nylon Bag Premium (1 Kg)",
+          "packageWeight": 1,
+          "quantity": 150,
+          "totalWeight": 150
+        },
+        {
+          "commodity": "Buncis",
+          "packaging": "PE Plastic High-Density (HDPE) (2.5 Kg)",
+          "packageWeight": 2.5,
+          "quantity": 100,
+          "totalWeight": 250
+        }
+      ]
+    },
+    {
+      "id": "ORD-007",
+      "orderDate": "2026-05-27",
+      "commodity": "Jagung Manis, Sayuran Mix",
+      "packaging": "Karton Box Corrugated (Grosir) (10 Kg)",
+      "packageWeight": 10,
+      "quantity": 250,
+      "totalWeight": 700,
+      "status": "Siap Produksi",
+      "createdAt": "2026-05-27T16:18:00.000Z",
+      "customer": "CV Indojaya Frozen (Tokopedia Seller)",
+      "source": "E-Commerce (Tokopedia)",
+      "items": [
+        {
+          "commodity": "Jagung Manis",
+          "packaging": "Karton Box Corrugated (Grosir) (10 Kg)",
+          "packageWeight": 10,
+          "quantity": 50,
+          "totalWeight": 500
+        },
+        {
+          "commodity": "Sayuran Mix",
+          "packaging": "Vacuum Nylon Bag Premium (1 Kg)",
+          "packageWeight": 1,
+          "quantity": 200,
+          "totalWeight": 200
+        }
+      ],
+      "status_order": "Siap Produksi"
+    },
+    {
+      "id": "ORD-008",
+      "orderDate": "2026-05-27",
+      "commodity": "Buncis, Wortel",
+      "packaging": "Vacuum Nylon Bag Premium (2.5 Kg)",
+      "packageWeight": 2.5,
+      "quantity": 200,
+      "totalWeight": 500,
+      "status": "Siap Produksi",
+      "createdAt": "2026-05-27T16:20:00.000Z",
+      "customer": "Ratih Kusuma (Web AgroCare)",
+      "source": "E-Commerce (Web)",
+      "items": [
+        {
+          "commodity": "Buncis",
+          "packaging": "Vacuum Nylon Bag Premium (2.5 Kg)",
+          "packageWeight": 2.5,
+          "quantity": 120,
+          "totalWeight": 300
+        },
+        {
+          "commodity": "Wortel",
+          "packaging": "Vacuum Nylon Bag Premium (2.5 Kg)",
+          "packageWeight": 2.5,
+          "quantity": 80,
+          "totalWeight": 200
+        }
+      ]
+    },
+    {
+      "id": "ORD-009",
+      "orderDate": "2026-05-27",
+      "commodity": "Sayuran Mix",
+      "packaging": "Karton Box Corrugated (Grosir) (5 Kg)",
+      "packageWeight": 5,
+      "quantity": 120,
+      "totalWeight": 600,
+      "status": "Selesai",
+      "createdAt": "2026-05-27T16:10:00.000Z",
+      "customer": "Hotel Aston Culinary Group",
+      "source": "Grosir Offline",
+      "items": [
+        {
+          "commodity": "Sayuran Mix",
+          "packaging": "Karton Box Corrugated (Grosir) (5 Kg)",
+          "packageWeight": 5,
+          "quantity": 120,
+          "totalWeight": 600
+        }
+      ]
+    },
+    {
+      "id": "AGP-ORD-2026-001",
+      "orderDate": "2026-06-03",
+      "deliveryDate": "2026-06-10",
+      "commodity": "Wortel, Buncis",
+      "packaging": "Kemasan 2.5 kg",
+      "packageWeight": 2.5,
+      "quantity": 180,
+      "totalWeight": 450,
+      "items": [
+        {
+          "commodity": "Wortel",
+          "packaging": "Kemasan 2.5 kg",
+          "packageWeight": 2.5,
+          "quantity": 100,
+          "totalWeight": 250,
+          "nama_komoditas": "Wortel",
+          "qty_pack": 100,
+          "berat_kemasan": 2.5,
+          "total_berat": 250
+        },
+        {
+          "commodity": "Buncis",
+          "packaging": "Kemasan 2.5 kg",
+          "packageWeight": 2.5,
+          "quantity": 80,
+          "totalWeight": 200,
+          "nama_komoditas": "Buncis",
+          "qty_pack": 80,
+          "berat_kemasan": 2.5,
+          "total_berat": 200
+        }
+      ],
+      "status": "Menunggu Konfirmasi",
+      "createdAt": "2026-06-03T05:35:00.859Z",
+      "customer": "SBU Bandung (Internal)",
+      "source": "B2B SBU",
+      "id_order": "AGP-ORD-2026-001",
+      "tanggal_order": "2026-06-03",
+      "tanggal_pengiriman": "2026-06-10",
+      "status_order": "Menunggu Konfirmasi",
+      "items_indo": [
+        {
+          "commodity": "Wortel",
+          "packaging": "Kemasan 2.5 kg",
+          "packageWeight": 2.5,
+          "quantity": 100,
+          "totalWeight": 250,
+          "nama_komoditas": "Wortel",
+          "qty_pack": 100,
+          "berat_kemasan": 2.5,
+          "total_berat": 250
+        },
+        {
+          "commodity": "Buncis",
+          "packaging": "Kemasan 2.5 kg",
+          "packageWeight": 2.5,
+          "quantity": 80,
+          "totalWeight": 200,
+          "nama_komoditas": "Buncis",
+          "qty_pack": 80,
+          "berat_kemasan": 2.5,
+          "total_berat": 200
+        }
+      ]
+    }
+  ],
+  "procurements": [
+    {
+      "id": "REQ-001",
+      "commodity": "Wortel",
+      "neededWeight": 769.2,
+      "estimatedShrinkage": 269.2,
+      "rawMaterialToOrder": 770,
+      "marketPricePerKg": 8500,
+      "totalPrice": 6545000,
+      "expectedDeliveryDate": "2026-05-25",
+      "notes": "Pengadaan Wortel dari Kelompok Tani Berkah Jaya untuk Order ORD-001",
+      "status": "Selesai",
+      "createdAt": "2026-05-24T08:15:00Z"
+    },
+    {
+      "id": "REQ-002",
+      "commodity": "Buncis",
+      "neededWeight": 1075.3,
+      "estimatedShrinkage": 75.3,
+      "rawMaterialToOrder": 1080,
+      "marketPricePerKg": 11000,
+      "totalPrice": 11880000,
+      "expectedDeliveryDate": "2026-05-26",
+      "notes": "Pesanan bahan baku Buncis untuk SBU Bandung ORD-002",
+      "status": "Selesai",
+      "createdAt": "2026-05-25T09:45:00Z"
+    },
+    {
+      "id": "REQ-003",
+      "commodity": "Jagung Manis",
+      "neededWeight": 555.6,
+      "estimatedShrinkage": 55.6,
+      "rawMaterialToOrder": 560,
+      "marketPricePerKg": 7000,
+      "totalPrice": 3920000,
+      "expectedDeliveryDate": "2026-05-28",
+      "notes": "Kebutuhan Jagung Manis untuk ORD-003",
+      "status": "Dikirim",
+      "createdAt": "2026-05-26T10:30:00Z"
+    },
+    {
+      "id": "REQ-004",
+      "commodity": "Wortel",
+      "neededWeight": 153.8,
+      "estimatedShrinkage": 53.89999999999999,
+      "rawMaterialToOrder": 154,
+      "marketPricePerKg": 8500,
+      "totalPrice": 1309000,
+      "expectedDeliveryDate": "2026-05-27",
+      "notes": "",
+      "status": "Dikirim",
+      "createdAt": "2026-05-27T13:30:48.040Z"
+    },
+    {
+      "id": "REQ-005",
+      "commodity": "Jagung Manis",
+      "neededWeight": 133.3,
+      "estimatedShrinkage": 13.399999999999991,
+      "rawMaterialToOrder": 134,
+      "marketPricePerKg": 15000,
+      "totalPrice": 2010000,
+      "expectedDeliveryDate": "2026-05-28",
+      "notes": "Pengadaan bahan baku Jagung Manis segar dari petani untuk mencukupi estimasi hasil jadi 120 Kg.",
+      "status": "Selesai",
+      "createdAt": "2026-05-27T15:05:40.374Z"
+    },
+    {
+      "id": "REQ-006",
+      "orderId": "AGP-ORD-2026-001",
+      "commodity": "Wortel, Buncis",
+      "neededWeight": 601,
+      "estimatedShrinkage": 149.87,
+      "rawMaterialToOrder": 601,
+      "marketPricePerKg": 3000,
+      "totalPrice": 3531000,
+      "expectedDeliveryDate": "2026-06-03",
+      "notes": "Pemesanan bahan baku Buncis segar (Order SBU AGP-ORD-2026-001) sesuai hasil hitung saringan susut untuk target SBU 200 Kg.",
+      "items": [
+        {
+          "commodity": "Wortel",
+          "quantity": 1,
+          "packageWeight": 1,
+          "totalWeight": 385,
+          "neededWeight": 385,
+          "marketPricePerKg": 3000,
+          "totalPrice": 1155000,
+          "packaging": "Kiloan / Curah",
+          "orderId": "AGP-ORD-2026-001"
+        },
+        {
+          "commodity": "Buncis",
+          "quantity": 1,
+          "packageWeight": 1,
+          "totalWeight": 216,
+          "neededWeight": 216,
+          "marketPricePerKg": 11000,
+          "totalPrice": 2376000,
+          "packaging": "Kiloan / Curah",
+          "orderId": "AGP-ORD-2026-001"
+        }
+      ],
+      "status": "Selesai",
+      "createdAt": "2026-06-03T05:37:09.440Z"
+    }
+  ],
+  "deliveries": [
+    {
+      "id": "RCV-001",
+      "procurementId": "REQ-001",
+      "farmerName": "HBP Tani Mulyo (Pak Slamet)",
+      "commodity": "Wortel",
+      "sentWeight": 770,
+      "shippingDate": "2026-05-25",
+      "photoUrl": "",
+      "photoMetadata": null,
+      "scaledWeightWarehouse": 770,
+      "scaleStatus": "Sesuai",
+      "scaleDifference": 0,
+      "scaleNotes": "Timbang ulang sesuai dengan surat jalan tani 770 kg.",
+      "status": "Diproses QC",
+      "createdAt": "2026-05-25T07:50:00Z"
+    },
+    {
+      "id": "RCV-002",
+      "procurementId": "REQ-002",
+      "farmerName": "Kelompok Tani Lestari (Pak Hendra)",
+      "commodity": "Buncis",
+      "sentWeight": 1080,
+      "shippingDate": "2026-05-26",
+      "photoUrl": "",
+      "photoMetadata": null,
+      "scaledWeightWarehouse": 1080,
+      "scaleStatus": "Sesuai",
+      "scaleDifference": 0,
+      "scaleNotes": "Kekurangan dipenuhi oleh Kepala Tani. Data diperbarui.",
+      "status": "Diterima",
+      "createdAt": "2026-05-26T08:20:00Z"
+    },
+    {
+      "id": "RCV-003",
+      "procurementId": "REQ-002",
+      "farmerName": "nan bahan baku Buncis",
+      "commodity": "Buncis",
+      "sentWeight": 1080,
+      "shippingDate": "2026-05-27",
+      "photoUrl": "",
+      "photoMetadata": null,
+      "status": "Diterima",
+      "createdAt": "2026-05-27T13:33:33.911Z",
+      "scaledWeightWarehouse": 1080,
+      "scaleStatus": "Sesuai",
+      "scaleDifference": 0,
+      "scaleNotes": "Produk Buncis telah diletakkan di jembatan timbang digital pintu 2."
+    },
+    {
+      "id": "RCV-004",
+      "procurementId": "REQ-002",
+      "farmerName": "cikajang",
+      "commodity": "Buncis",
+      "sentWeight": 1080,
+      "shippingDate": "2026-05-27",
+      "photoUrl": "",
+      "photoMetadata": null,
+      "status": "Diterima",
+      "createdAt": "2026-05-27T13:34:20.021Z",
+      "scaledWeightWarehouse": 1080,
+      "scaleStatus": "Sesuai",
+      "scaleDifference": 0,
+      "scaleNotes": "Produk Buncis telah diletakkan di jembatan timbang digital pintu 2."
+    },
+    {
+      "id": "RCV-005",
+      "procurementId": "REQ-005",
+      "farmerName": "petani",
+      "commodity": "Jagung Manis",
+      "sentWeight": 134,
+      "shippingDate": "2026-05-27",
+      "photoUrl": "",
+      "photoMetadata": null,
+      "status": "Diterima",
+      "createdAt": "2026-05-27T15:07:23.690Z",
+      "scaledWeightWarehouse": 130,
+      "scaleStatus": "Kekurangan",
+      "scaleDifference": -4,
+      "scaleNotes": "Produk Jagung Manis telah diletakkan di jembatan timbang digital pintu 2."
+    },
+    {
+      "id": "AGP-RCV-2026-001",
+      "procurementId": "REQ-006",
+      "orderId": "AGP-ORD-2026-001",
+      "id_order": "AGP-ORD-2026-001",
+      "farmerName": "Pemesanan bahan baku Buncis segar (Order SBU AGP-ORD-2026-001) sesuai hasil hitung saringan susut untuk target SBU 200 Kg.",
+      "commodity": "Wortel, Buncis",
+      "sentWeight": 601,
+      "shippingDate": "2026-06-03",
+      "photoUrl": "/storage/penerimaan/penerimaan_REQ-006_1780465125223.jpg",
+      "photoMetadata": {
+        "timestamp": "2026-06-03T05:38:44.951Z",
+        "deviceInfo": "Desktop Station (Win32) - Chrome Engine",
+        "geolocation": "-6.894464, 107.614594 (Valid GPS Coords)"
+      },
+      "status": "Diterima",
+      "createdAt": "2026-06-03T05:38:45.262Z",
+      "scaledWeightWarehouse": 601,
+      "scaleStatus": "Sesuai",
+      "scaleDifference": 0,
+      "scaleNotes": "Produk Wortel, Buncis telah diletakkan di jembatan timbang digital pintu 2."
+    }
+  ],
+  "qcChecklists": [
+    {
+      "id": "QC-001",
+      "deliveryId": "RCV-001",
+      "commodity": "Wortel",
+      "checkedWeight": 770,
+      "warnaCerah": true,
+      "teksturPadat": true,
+      "tidakBerlendir": true,
+      "tidakAdaBercakBusuk": true,
+      "tidakAdaBagianRusak": true,
+      "isReject": false,
+      "rejectWeight": 0,
+      "passedWeight": 770,
+      "passedPercentage": 100,
+      "qcNotes": "Kondisi wortel sangat prima, segar tanpa ulat.",
+      "photoUrl": "",
+      "checkedBy": "Agus Wijaya",
+      "checkedAt": "2026-05-25T08:30:00Z"
+    },
+    {
+      "id": "QC-002",
+      "deliveryId": "RCV-002",
+      "commodity": "Buncis",
+      "checkedWeight": 1080,
+      "warnaCerah": true,
+      "teksturPadat": true,
+      "tidakBerlendir": true,
+      "tidakAdaBercakBusuk": true,
+      "tidakAdaBagianRusak": false,
+      "isReject": true,
+      "rejectWeight": 30,
+      "passedWeight": 1050,
+      "passedPercentage": 97.22222222222221,
+      "qcNotes": "reject 30 busuk",
+      "photoUrl": "",
+      "checkedBy": "Budi Santoso",
+      "checkedAt": "2026-05-27T13:37:13.719Z"
+    },
+    {
+      "id": "QC-003",
+      "deliveryId": "RCV-003",
+      "commodity": "Buncis",
+      "checkedWeight": 1080,
+      "warnaCerah": false,
+      "teksturPadat": true,
+      "tidakBerlendir": true,
+      "tidakAdaBercakBusuk": true,
+      "tidakAdaBagianRusak": true,
+      "isReject": false,
+      "rejectWeight": 0,
+      "passedWeight": 1080,
+      "passedPercentage": 100,
+      "qcNotes": "sss",
+      "photoUrl": "",
+      "checkedBy": "Budi Santoso",
+      "checkedAt": "2026-05-27T13:49:27.567Z"
+    },
+    {
+      "id": "QC-004",
+      "deliveryId": "RCV-005",
+      "commodity": "Jagung Manis",
+      "checkedWeight": 130,
+      "warnaCerah": true,
+      "teksturPadat": true,
+      "tidakBerlendir": true,
+      "tidakAdaBercakBusuk": true,
+      "tidakAdaBagianRusak": true,
+      "isReject": false,
+      "rejectWeight": 0,
+      "passedWeight": 130,
+      "passedPercentage": 100,
+      "qcNotes": "segar",
+      "photoUrl": "",
+      "checkedBy": "Budi Santoso",
+      "checkedAt": "2026-05-27T15:08:35.460Z"
+    },
+    {
+      "id": "QC-005",
+      "deliveryId": "RCV-004",
+      "commodity": "Buncis",
+      "checkedWeight": 1080,
+      "warnaCerah": true,
+      "teksturPadat": true,
+      "tidakBerlendir": true,
+      "tidakAdaBercakBusuk": true,
+      "tidakAdaBagianRusak": true,
+      "isReject": false,
+      "rejectWeight": 0,
+      "passedWeight": 1080,
+      "passedPercentage": 100,
+      "qcNotes": "jjj",
+      "photoUrl": "",
+      "checkedBy": "Budi Santoso",
+      "checkedAt": "2026-05-27T15:24:57.394Z"
+    },
+    {
+      "id": "QC-006",
+      "deliveryId": "AGP-RCV-2026-001",
+      "commodity": "Wortel, Buncis",
+      "checkedWeight": 601,
+      "warnaCerah": true,
+      "teksturPadat": true,
+      "tidakBerlendir": true,
+      "tidakAdaBercakBusuk": true,
+      "tidakAdaBagianRusak": true,
+      "isReject": false,
+      "rejectWeight": 0,
+      "rejectItems": [],
+      "passedWeight": 601,
+      "passedPercentage": 100,
+      "qcNotes": "buys",
+      "photoUrl": "/storage/qc/qc_QC-006_1780465227459.jpg",
+      "photoMetadata": {
+        "timestamp": "2026-06-03T05:40:15.519Z",
+        "geolocation": "S 7° 58' 12\" E 112° 37' 41\" (Lab QC Malang Timur)",
+        "deviceInfo": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Sa - WebUSB Lab Cam v2"
+      },
+      "checkedBy": "Budi Santoso",
+      "checkedAt": "2026-06-03T05:40:27.459Z"
+    }
+  ],
+  "productions": [],
+  "hppRecords": [],
+  "auditLogs": [
+    {
+      "id": "L1781601190950-597",
+      "username": "admin",
+      "role": "Admin Gudang",
+      "action": "REGENERATE_DOCUMENT",
+      "details": "Meng-update dan re-generate dokumen permintaan FPPB/AP/2026/007 dengan status Siap Produksi",
+      "timestamp": "2026-06-16T09:13:10.950Z",
+      "ipAddress": "127.0.0.1"
+    },
+    {
+      "id": "L1781601190897-580",
+      "username": "admin",
+      "role": "Admin Gudang",
+      "action": "UPDATE_ORDER_STATUS",
+      "details": "Mengubah status order ORD-007 menjadi Siap Produksi",
+      "timestamp": "2026-06-16T09:13:10.897Z",
+      "ipAddress": "127.0.0.1"
+    },
+    {
+      "id": "L1781601162496-599",
+      "username": "admin",
+      "role": "Admin Gudang",
+      "action": "LOGIN",
+      "details": "Berhasil login ke sistem.",
+      "timestamp": "2026-06-16T09:12:42.496Z",
+      "ipAddress": "127.0.0.1"
+    },
+    {
+      "id": "L1780465411006-571",
+      "username": "produksi",
+      "role": "Kepala Produksi",
+      "action": "LOGIN",
+      "details": "Berhasil login ke sistem.",
+      "timestamp": "2026-06-03T05:43:31.006Z",
+      "ipAddress": "127.0.0.1"
+    },
+    {
+      "id": "L1780465227462-874",
+      "username": "admin",
+      "role": "Admin Gudang",
+      "action": "QC_CHECKLIST",
+      "details": "Melakukan audit QC QC-006 untuk Wortel, Buncis. Hasil: PASSED (601 Kg lolos, 0 Kg reject)",
+      "timestamp": "2026-06-03T05:40:27.462Z",
+      "ipAddress": "127.0.0.1"
+    },
+    {
+      "id": "L1780465181733-528",
+      "username": "admin",
+      "role": "Admin Gudang",
+      "action": "TIMBANG_ULANG",
+      "details": "Validasi timbang ulang harian AGP-RCV-2026-001. Timbangan: 601 Kg (Kirim: 601 Kg, Selisih: 0 Kg) -> Sesuai",
+      "timestamp": "2026-06-03T05:39:41.733Z",
+      "ipAddress": "127.0.0.1"
+    },
+    {
+      "id": "L1780465125265-161",
+      "username": "admin",
+      "role": "Admin Gudang",
+      "action": "TERIMA_BAHAN_BAKU",
+      "details": "Menerima kiriman AGP-RCV-2026-001 dari Pemesanan bahan baku Buncis segar (Order SBU AGP-ORD-2026-001) sesuai hasil hitung saringan susut untuk target SBU 200 Kg. sebanyak 601 Kg",
+      "timestamp": "2026-06-03T05:38:45.265Z",
+      "ipAddress": "127.0.0.1"
+    },
+    {
+      "id": "L1780465029442-31",
+      "username": "admin",
+      "role": "Admin Gudang",
+      "action": "BUAT_PENGAJUAN_TANI",
+      "details": "Mengajukan bahan baku REQ-006: Wortel, Buncis (601 kg) senilai Rp 3,531,000",
+      "timestamp": "2026-06-03T05:37:09.442Z",
+      "ipAddress": "127.0.0.1"
+    },
+    {
+      "id": "L1780464900888-564",
+      "username": "admin",
+      "role": "Admin Gudang",
+      "action": "BUAT_ORDER",
+      "details": "Membuat order baru AGP-ORD-2026-001: Wortel, Buncis (450.00 Kg) & auto-generate FPPB",
+      "timestamp": "2026-06-03T05:35:00.888Z",
+      "ipAddress": "127.0.0.1"
+    },
+    {
+      "id": "L1780464549155-606",
+      "username": "admin",
+      "role": "Admin Gudang",
+      "action": "LOGIN",
+      "details": "Berhasil login ke sistem.",
+      "timestamp": "2026-06-03T05:29:09.155Z",
+      "ipAddress": "127.0.0.1"
+    },
+    {
+      "id": "L1779898220262-549",
+      "username": "admin",
+      "role": "Admin Gudang",
+      "action": "LOGIN",
+      "details": "Berhasil login ke sistem.",
+      "timestamp": "2026-05-27T16:10:20.262Z",
+      "ipAddress": "127.0.0.1"
+    },
+    {
+      "id": "L1779898185955-21",
+      "username": "produksi",
+      "role": "Kepala Produksi",
+      "action": "SIMPAN_HASIL_PRODUKSI",
+      "details": "Mengunci output kemasan PROD-002: 500 pack 1 Kg (500 Kg) masuk ke unit Freezer-Zone-Alpha.",
+      "timestamp": "2026-05-27T16:09:45.955Z",
+      "ipAddress": "127.0.0.1"
+    },
+    {
+      "id": "L1779898151022-573",
+      "username": "produksi",
+      "role": "Kepala Produksi",
+      "action": "LANJUT_PRODUKSI",
+      "details": "Langkah produksi PROD-002 diperbarui: Penirisan/Packaging (Tahapan: 6/6)",
+      "timestamp": "2026-05-27T16:09:11.022Z",
+      "ipAddress": "127.0.0.1"
+    },
+    {
+      "id": "L1779898149199-270",
+      "username": "produksi",
+      "role": "Kepala Produksi",
+      "action": "LANJUT_PRODUKSI",
+      "details": "Langkah produksi PROD-002 diperbarui: Penirisan/Packaging (Tahapan: 6/6)",
+      "timestamp": "2026-05-27T16:09:09.199Z",
+      "ipAddress": "127.0.0.1"
+    },
+    {
+      "id": "L1779898141203-788",
+      "username": "produksi",
+      "role": "Kepala Produksi",
+      "action": "LANJUT_PRODUKSI",
+      "details": "Langkah produksi PROD-002 diperbarui: Blanching/Perendaman (Tahapan: 5/6)",
+      "timestamp": "2026-05-27T16:09:01.203Z",
+      "ipAddress": "127.0.0.1"
+    },
+    {
+      "id": "L1779898138459-101",
+      "username": "produksi",
+      "role": "Kepala Produksi",
+      "action": "LANJUT_PRODUKSI",
+      "details": "Langkah produksi PROD-002 diperbarui: Blanching/Perendaman (Tahapan: 4/6)",
+      "timestamp": "2026-05-27T16:08:58.459Z",
+      "ipAddress": "127.0.0.1"
+    },
+    {
+      "id": "L1779898136064-231",
+      "username": "produksi",
+      "role": "Kepala Produksi",
+      "action": "LANJUT_PRODUKSI",
+      "details": "Langkah produksi PROD-002 diperbarui: Blanching/Perendaman (Tahapan: 3/6)",
+      "timestamp": "2026-05-27T16:08:56.064Z",
+      "ipAddress": "127.0.0.1"
+    },
+    {
+      "id": "L1779898134193-750",
+      "username": "produksi",
+      "role": "Kepala Produksi",
+      "action": "LANJUT_PRODUKSI",
+      "details": "Langkah produksi PROD-002 diperbarui: Pencucian/Pemotongan (Tahapan: 2/6)",
+      "timestamp": "2026-05-27T16:08:54.193Z",
+      "ipAddress": "127.0.0.1"
+    },
+    {
+      "id": "L1779898126853-332",
+      "username": "produksi",
+      "role": "Kepala Produksi",
+      "action": "LANJUT_PRODUKSI",
+      "details": "Langkah produksi PROD-002 diperbarui: Pencucian/Pemotongan (Tahapan: 1/6)",
+      "timestamp": "2026-05-27T16:08:46.853Z",
+      "ipAddress": "127.0.0.1"
+    },
+    {
+      "id": "L1779898069109-179",
+      "username": "produksi",
+      "role": "Kepala Produksi",
+      "action": "LOGIN",
+      "details": "Berhasil login ke sistem.",
+      "timestamp": "2026-05-27T16:07:49.109Z",
+      "ipAddress": "127.0.0.1"
+    },
+    {
+      "id": "L1779896448256-774",
+      "username": "admin",
+      "role": "Admin Gudang",
+      "action": "LOGIN",
+      "details": "Berhasil login ke sistem.",
+      "timestamp": "2026-05-27T15:40:48.256Z",
+      "ipAddress": "127.0.0.1"
+    },
+    {
+      "id": "L1779895551844-544",
+      "username": "admin",
+      "role": "Admin Gudang",
+      "action": "BUAT_JADWAL_PRODUKSI",
+      "details": "Menetapkan jadwal produksi PROD-002 (Wortel - Target: 500 kg)",
+      "timestamp": "2026-05-27T15:25:51.844Z",
+      "ipAddress": "127.0.0.1"
+    },
+    {
+      "id": "L1779895497400-0",
+      "username": "admin",
+      "role": "Admin Gudang",
+      "action": "QC_CHECKLIST",
+      "details": "Melakukan audit QC QC-005 untuk Buncis. Hasil: PASSED (1080 Kg lolos, 0 Kg reject)",
+      "timestamp": "2026-05-27T15:24:57.400Z",
+      "ipAddress": "127.0.0.1"
+    },
+    {
+      "id": "L1779895441110-664",
+      "username": "admin",
+      "role": "Admin Gudang",
+      "action": "TIMBANG_ULANG",
+      "details": "Validasi timbang ulang harian RCV-004. Timbangan: 1080 Kg (Kirim: 1080 Kg, Selisih: 0 Kg) -> Sesuai",
+      "timestamp": "2026-05-27T15:24:01.110Z",
+      "ipAddress": "127.0.0.1"
+    },
+    {
+      "id": "L1779894626426-286",
+      "username": "admin",
+      "role": "Admin Gudang",
+      "action": "KIRIM_BARANG_SBU",
+      "details": "Mengirimkan komoditas Buncis (1000 kg) untuk order ORD-002 melalui armada D 1902 FZ",
+      "timestamp": "2026-05-27T15:10:26.426Z",
+      "ipAddress": "127.0.0.1"
+    },
+    {
+      "id": "L1779894515464-609",
+      "username": "admin",
+      "role": "Admin Gudang",
+      "action": "QC_CHECKLIST",
+      "details": "Melakukan audit QC QC-004 untuk Jagung Manis. Hasil: PASSED (130 Kg lolos, 0 Kg reject)",
+      "timestamp": "2026-05-27T15:08:35.464Z",
+      "ipAddress": "127.0.0.1"
+    },
+    {
+      "id": "L1779894479250-907",
+      "username": "admin",
+      "role": "Admin Gudang",
+      "action": "TIMBANG_ULANG",
+      "details": "Validasi timbang ulang harian RCV-005. Timbangan: 130 Kg (Kirim: 134 Kg, Selisih: -4 Kg) -> Kekurangan",
+      "timestamp": "2026-05-27T15:07:59.250Z",
+      "ipAddress": "127.0.0.1"
+    },
+    {
+      "id": "L1779894443695-969",
+      "username": "admin",
+      "role": "Admin Gudang",
+      "action": "TERIMA_BAHAN_BAKU",
+      "details": "Menerima kiriman RCV-005 dari petani sebanyak 134 Kg",
+      "timestamp": "2026-05-27T15:07:23.695Z",
+      "ipAddress": "127.0.0.1"
+    },
+    {
+      "id": "L1779894340392-389",
+      "username": "admin",
+      "role": "Admin Gudang",
+      "action": "BUAT_PENGAJUAN_TANI",
+      "details": "Mengajukan bahan baku REQ-005: Jagung Manis (134 kg) senilai Rp 2,010,000",
+      "timestamp": "2026-05-27T15:05:40.392Z",
+      "ipAddress": "127.0.0.1"
+    },
+    {
+      "id": "L1779894239378-158",
+      "username": "admin",
+      "role": "Admin Gudang",
+      "action": "UPDATE_ORDER_STATUS",
+      "details": "Mengubah status order ORD-004 menjadi Selesai",
+      "timestamp": "2026-05-27T15:03:59.378Z",
+      "ipAddress": "127.0.0.1"
+    },
+    {
+      "id": "L1779894238270-896",
+      "username": "admin",
+      "role": "Admin Gudang",
+      "action": "UPDATE_ORDER_STATUS",
+      "details": "Mengubah status order ORD-005 menjadi Selesai",
+      "timestamp": "2026-05-27T15:03:58.270Z",
+      "ipAddress": "127.0.0.1"
+    },
+    {
+      "id": "L1779894211465-878",
+      "username": "admin",
+      "role": "Admin Gudang",
+      "action": "UPDATE_PENGAJUAN_STATUS",
+      "details": "Mengubah status pengajuan REQ-003 menjadi Dikirim",
+      "timestamp": "2026-05-27T15:03:31.465Z",
+      "ipAddress": "127.0.0.1"
+    },
+    {
+      "id": "L1779894202143-419",
+      "username": "admin",
+      "role": "Admin Gudang",
+      "action": "UPDATE_PENGAJUAN_STATUS",
+      "details": "Mengubah status pengajuan REQ-004 menjadi Dikirim",
+      "timestamp": "2026-05-27T15:03:22.143Z",
+      "ipAddress": "127.0.0.1"
+    },
+    {
+      "id": "L1779894194718-600",
+      "username": "admin",
+      "role": "Admin Gudang",
+      "action": "UPDATE_PENGAJUAN_STATUS",
+      "details": "Mengubah status pengajuan REQ-004 menjadi Disetujui",
+      "timestamp": "2026-05-27T15:03:14.718Z",
+      "ipAddress": "127.0.0.1"
+    },
+    {
+      "id": "L1779894135283-187",
+      "username": "admin",
+      "role": "Admin Gudang",
+      "action": "UPDATE_ORDER_STATUS",
+      "details": "Mengubah status order ORD-005 menjadi Diproses",
+      "timestamp": "2026-05-27T15:02:15.283Z",
+      "ipAddress": "127.0.0.1"
+    },
+    {
+      "id": "L1779894128807-667",
+      "username": "admin",
+      "role": "Admin Gudang",
+      "action": "BUAT_ORDER",
+      "details": "Membuat order baru ORD-005: Wortel (250 Kg)",
+      "timestamp": "2026-05-27T15:02:08.807Z",
+      "ipAddress": "127.0.0.1"
+    },
+    {
+      "id": "L1779894065810-375",
+      "username": "admin",
+      "role": "Admin Gudang",
+      "action": "LOGIN",
+      "details": "Berhasil login ke sistem.",
+      "timestamp": "2026-05-27T15:01:05.810Z",
+      "ipAddress": "127.0.0.1"
+    },
+    {
+      "id": "L1779890168093-923",
+      "username": "pimpinan",
+      "role": "Pimpinan",
+      "action": "LOGIN",
+      "details": "Berhasil login ke sistem.",
+      "timestamp": "2026-05-27T13:56:08.093Z",
+      "ipAddress": "127.0.0.1"
+    },
+    {
+      "id": "L1779890097818-463",
+      "username": "produksi",
+      "role": "Kepala Produksi",
+      "action": "LOGIN",
+      "details": "Berhasil login ke sistem.",
+      "timestamp": "2026-05-27T13:54:57.818Z",
+      "ipAddress": "127.0.0.1"
+    },
+    {
+      "id": "L1779889767570-195",
+      "username": "admin",
+      "role": "Admin Gudang",
+      "action": "QC_CHECKLIST",
+      "details": "Melakukan audit QC QC-003 untuk Buncis. Hasil: PASSED (1080 Kg lolos, 0 Kg reject)",
+      "timestamp": "2026-05-27T13:49:27.570Z",
+      "ipAddress": "127.0.0.1"
+    },
+    {
+      "id": "L1779889239486-218",
+      "username": "admin",
+      "role": "Admin Gudang",
+      "action": "LOGIN",
+      "details": "Berhasil login ke sistem.",
+      "timestamp": "2026-05-27T13:40:39.486Z",
+      "ipAddress": "127.0.0.1"
+    },
+    {
+      "id": "L1779889118839-474",
+      "username": "admin",
+      "role": "Admin Gudang",
+      "action": "KIRIM_BARANG_SBU",
+      "details": "Mengirimkan komoditas Wortel (500 kg) untuk order ORD-001 melalui armada D 1902 FZ",
+      "timestamp": "2026-05-27T13:38:38.839Z",
+      "ipAddress": "127.0.0.1"
+    },
+    {
+      "id": "L1779889033723-223",
+      "username": "admin",
+      "role": "Admin Gudang",
+      "action": "QC_CHECKLIST",
+      "details": "Melakukan audit QC QC-002 untuk Buncis. Hasil: REJECT (1050 Kg lolos, 30 Kg reject)",
+      "timestamp": "2026-05-27T13:37:13.723Z",
+      "ipAddress": "127.0.0.1"
+    },
+    {
+      "id": "L1779888955103-763",
+      "username": "admin",
+      "role": "Admin Gudang",
+      "action": "TERIMA_KEKURANGAN_TANI",
+      "details": "Pemenuhan kekurangan pengiriman RCV-002. Timbangan direkonsiliasi menjadi 1080 Kg",
+      "timestamp": "2026-05-27T13:35:55.103Z",
+      "ipAddress": "127.0.0.1"
+    },
+    {
+      "id": "L1779888927193-370",
+      "username": "admin",
+      "role": "Admin Gudang",
+      "action": "TIMBANG_ULANG",
+      "details": "Validasi timbang ulang harian RCV-003. Timbangan: 1080 Kg (Kirim: 1080 Kg, Selisih: 0 Kg) -> Sesuai",
+      "timestamp": "2026-05-27T13:35:27.193Z",
+      "ipAddress": "127.0.0.1"
+    },
+    {
+      "id": "L1779888860023-160",
+      "username": "admin",
+      "role": "Admin Gudang",
+      "action": "TERIMA_BAHAN_BAKU",
+      "details": "Menerima kiriman RCV-004 dari cikajang sebanyak 1080 Kg",
+      "timestamp": "2026-05-27T13:34:20.023Z",
+      "ipAddress": "127.0.0.1"
+    },
+    {
+      "id": "L1779888813912-256",
+      "username": "admin",
+      "role": "Admin Gudang",
+      "action": "TERIMA_BAHAN_BAKU",
+      "details": "Menerima kiriman RCV-003 dari nan bahan baku Buncis sebanyak 1080 Kg",
+      "timestamp": "2026-05-27T13:33:33.912Z",
+      "ipAddress": "127.0.0.1"
+    },
+    {
+      "id": "L1779888648056-4",
+      "username": "admin",
+      "role": "Admin Gudang",
+      "action": "BUAT_PENGAJUAN_TANI",
+      "details": "Mengajukan bahan baku REQ-004: Wortel (154 kg) senilai Rp 1,309,000",
+      "timestamp": "2026-05-27T13:30:48.056Z",
+      "ipAddress": "127.0.0.1"
+    },
+    {
+      "id": "L1779888581602-542",
+      "username": "admin",
+      "role": "Admin Gudang",
+      "action": "UPDATE_ORDER_STATUS",
+      "details": "Mengubah status order ORD-004 menjadi Diproses",
+      "timestamp": "2026-05-27T13:29:41.602Z",
+      "ipAddress": "127.0.0.1"
+    },
+    {
+      "id": "L1779888578622-413",
+      "username": "admin",
+      "role": "Admin Gudang",
+      "action": "UPDATE_ORDER_STATUS",
+      "details": "Mengubah status order ORD-003 menjadi Selesai",
+      "timestamp": "2026-05-27T13:29:38.622Z",
+      "ipAddress": "127.0.0.1"
+    },
+    {
+      "id": "L1779888575846-316",
+      "username": "admin",
+      "role": "Admin Gudang",
+      "action": "UPDATE_ORDER_STATUS",
+      "details": "Mengubah status order ORD-002 menjadi Selesai",
+      "timestamp": "2026-05-27T13:29:35.846Z",
+      "ipAddress": "127.0.0.1"
+    },
+    {
+      "id": "L1779888569395-301",
+      "username": "admin",
+      "role": "Admin Gudang",
+      "action": "UPDATE_ORDER_STATUS",
+      "details": "Mengubah status order ORD-003 menjadi Diproses",
+      "timestamp": "2026-05-27T13:29:29.395Z",
+      "ipAddress": "127.0.0.1"
+    },
+    {
+      "id": "L1779888526373-735",
+      "username": "admin",
+      "role": "Admin Gudang",
+      "action": "LOGIN",
+      "details": "Berhasil login ke sistem.",
+      "timestamp": "2026-05-27T13:28:46.373Z",
+      "ipAddress": "127.0.0.1"
+    },
+    {
+      "id": "L001",
+      "username": "admin",
+      "role": "Admin Gudang",
+      "action": "Inisialisasi",
+      "details": "Sistem berhasil dijalankan dan diinisialisasi.",
+      "timestamp": "2026-05-27T10:00:00Z",
+      "ipAddress": "127.0.0.1"
+    },
+    {
+      "id": "L002",
+      "username": "admin",
+      "role": "Admin Gudang",
+      "action": "Membuat Order",
+      "details": "Menambahkan permintaan SBU Bandung untuk produk Sayuran Mix (ORD-004)",
+      "timestamp": "2026-05-27T11:05:00Z",
+      "ipAddress": "127.0.0.1"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "N1780465227461",
+      "title": "Bahan Baku Lolos Quality Control",
+      "message": "Checklist QC QC-006 untuk Wortel, Buncis dinyatakan 100% Bersih & Prima. Siap diproduksi!",
+      "type": "success",
+      "timestamp": "2026-06-03T05:40:27.461Z",
+      "read": false
+    },
+    {
+      "id": "N1780465181732",
+      "title": "Penerimaan Bahan Baku Tervalidasi",
+      "message": "Penerimaan AGP-RCV-2026-001 tervalidasi Sesuai (601 kg). Siap melaju ke pengecekan QC.",
+      "type": "success",
+      "timestamp": "2026-06-03T05:39:41.732Z",
+      "read": false
+    },
+    {
+      "id": "N1780465125263",
+      "title": "Penerimaan Bahan Baku Datang",
+      "message": "Bahan baku Wortel, Buncis (601 kg) dari Pemesanan bahan baku Buncis segar (Order SBU AGP-ORD-2026-001) sesuai hasil hitung saringan susut untuk target SBU 200 Kg. tiba di gudang.",
+      "type": "info",
+      "timestamp": "2026-06-03T05:38:45.263Z",
+      "read": false
+    },
+    {
+      "id": "N1780465029441",
+      "title": "Pengajuan Bahan Baku Baru",
+      "message": "Diajukan pengadaan Wortel, Buncis sebanyak 601 kg ke Kepala Tani.",
+      "type": "info",
+      "timestamp": "2026-06-03T05:37:09.441Z",
+      "read": false
+    },
+    {
+      "id": "N1780464900887",
+      "title": "Order Baru dari SBU Bandung",
+      "message": "Permintaan produk beku Wortel, Buncis sebanyak 180 pack (450.00 kg) diterima. Dokumen FPPB otomatis di-generate.",
+      "type": "info",
+      "timestamp": "2026-06-03T05:35:00.887Z",
+      "read": false
+    },
+    {
+      "id": "N1779898185953",
+      "title": "Hasil Produksi Disimpan & Disegel",
+      "message": "Produksi PROD-002 selesai. Total output: 500 pack @1 kg (500 kg) disimpan di Freezer-Zone-Alpha.",
+      "type": "success",
+      "timestamp": "2026-05-27T16:09:45.953Z",
+      "read": false
+    },
+    {
+      "id": "N1779895551841",
+      "title": "Jadwal Produksi Baru",
+      "message": "Jadwal produksi PROD-002 untuk Wortel (500 kg) dijadwalkan tanggal 2026-05-27.",
+      "type": "info",
+      "timestamp": "2026-05-27T15:25:51.841Z",
+      "read": false
+    },
+    {
+      "id": "N1779895497397",
+      "title": "Bahan Baku Lolos Quality Control",
+      "message": "Checklist QC QC-005 untuk Buncis dinyatakan 100% Bersih & Prima. Siap diproduksi!",
+      "type": "success",
+      "timestamp": "2026-05-27T15:24:57.397Z",
+      "read": false
+    },
+    {
+      "id": "N1779895441108",
+      "title": "Penerimaan Bahan Baku Tervalidasi",
+      "message": "Penerimaan RCV-004 tervalidasi Sesuai (1080 kg). Siap melaju ke pengecekan QC.",
+      "type": "success",
+      "timestamp": "2026-05-27T15:24:01.108Z",
+      "read": false
+    },
+    {
+      "id": "N1779894626423",
+      "title": "Barang Dikirim ke Bandung",
+      "message": "Shipment order ORD-002 sedang dijalan bersama kurir Asep Sunandar (D 1902 FZ).",
+      "type": "success",
+      "timestamp": "2026-05-27T15:10:26.423Z",
+      "read": false
+    },
+    {
+      "id": "N1779894515462",
+      "title": "Bahan Baku Lolos Quality Control",
+      "message": "Checklist QC QC-004 untuk Jagung Manis dinyatakan 100% Bersih & Prima. Siap diproduksi!",
+      "type": "success",
+      "timestamp": "2026-05-27T15:08:35.462Z",
+      "read": false
+    },
+    {
+      "id": "N1779894479248",
+      "title": "Timbang Ulang: Kekurangan Bahan Baku!",
+      "message": "Kekurangan berat 4 kg pada Jagung Manis (RCV-005) dari petani. Notifikasi terkirim ke Kepala Tani.",
+      "type": "warn",
+      "timestamp": "2026-05-27T15:07:59.248Z",
+      "read": false
+    },
+    {
+      "id": "N1779894443692",
+      "title": "Penerimaan Bahan Baku Datang",
+      "message": "Bahan baku Jagung Manis (134 kg) dari petani tiba di gudang.",
+      "type": "info",
+      "timestamp": "2026-05-27T15:07:23.692Z",
+      "read": false
+    },
+    {
+      "id": "N1779894340376",
+      "title": "Pengajuan Bahan Baku Baru",
+      "message": "Diajukan pengadaan Jagung Manis sebanyak 134 kg ke Kepala Tani.",
+      "type": "info",
+      "timestamp": "2026-05-27T15:05:40.376Z",
+      "read": false
+    },
+    {
+      "id": "N1779894239375",
+      "title": "Produksi Order Selesai",
+      "message": "Order ORD-004 untuk komoditas Sayuran Mix siap kirim.",
+      "type": "success",
+      "timestamp": "2026-05-27T15:03:59.375Z",
+      "read": false
+    },
+    {
+      "id": "N1779894238268",
+      "title": "Produksi Order Selesai",
+      "message": "Order ORD-005 untuk komoditas Wortel siap kirim.",
+      "type": "success",
+      "timestamp": "2026-05-27T15:03:58.268Z",
+      "read": false
+    },
+    {
+      "id": "N1779894211464",
+      "title": "Status Pengajuan Diperbarui",
+      "message": "Pengajuan bahan baku REQ-003 saat ini berstatus: Dikirim",
+      "type": "info",
+      "timestamp": "2026-05-27T15:03:31.464Z",
+      "read": false
+    },
+    {
+      "id": "N1779894202141",
+      "title": "Status Pengajuan Diperbarui",
+      "message": "Pengajuan bahan baku REQ-004 saat ini berstatus: Dikirim",
+      "type": "info",
+      "timestamp": "2026-05-27T15:03:22.141Z",
+      "read": false
+    },
+    {
+      "id": "N1779894194717",
+      "title": "Status Pengajuan Diperbarui",
+      "message": "Pengajuan bahan baku REQ-004 saat ini berstatus: Disetujui",
+      "type": "success",
+      "timestamp": "2026-05-27T15:03:14.717Z",
+      "read": false
+    },
+    {
+      "id": "N1779894128806",
+      "title": "Order Baru dari SBU Bandung",
+      "message": "Permintaan produk beku Wortel (2.5 Kg) sebanyak 100 pack (250 kg) diterima.",
+      "type": "info",
+      "timestamp": "2026-05-27T15:02:08.806Z",
+      "read": false
+    },
+    {
+      "id": "N1779889767568",
+      "title": "Bahan Baku Lolos Quality Control",
+      "message": "Checklist QC QC-003 untuk Buncis dinyatakan 100% Bersih & Prima. Siap diproduksi!",
+      "type": "success",
+      "timestamp": "2026-05-27T13:49:27.568Z",
+      "read": false
+    },
+    {
+      "id": "N1779889118838",
+      "title": "Barang Dikirim ke Bandung",
+      "message": "Shipment order ORD-001 sedang dijalan bersama kurir Asep Sunandar (D 1902 FZ).",
+      "type": "success",
+      "timestamp": "2026-05-27T13:38:38.838Z",
+      "read": true
+    },
+    {
+      "id": "N1779889033722",
+      "title": "Kategori Barang Reject Ditemukan!",
+      "message": "Pemeriksaan QC QC-002 melacak produk reject Buncis sebanyak 30 kg (97.2% lolos).",
+      "type": "error",
+      "timestamp": "2026-05-27T13:37:13.722Z",
+      "read": true
+    },
+    {
+      "id": "N1779888955102",
+      "title": "Kekurangan Bahan Baku Terpenuhi",
+      "message": "Selisih untuk RCV-002 telah dipenuhi oleh petani. Status diubah menjadi Sesuai.",
+      "type": "success",
+      "timestamp": "2026-05-27T13:35:55.103Z",
+      "read": true
+    },
+    {
+      "id": "N1779888927192",
+      "title": "Penerimaan Bahan Baku Tervalidasi",
+      "message": "Penerimaan RCV-003 tervalidasi Sesuai (1080 kg). Siap melaju ke pengecekan QC.",
+      "type": "success",
+      "timestamp": "2026-05-27T13:35:27.192Z",
+      "read": true
+    },
+    {
+      "id": "N1779888860022",
+      "title": "Penerimaan Bahan Baku Datang",
+      "message": "Bahan baku Buncis (1080 kg) dari cikajang tiba di gudang.",
+      "type": "info",
+      "timestamp": "2026-05-27T13:34:20.022Z",
+      "read": true
+    },
+    {
+      "id": "N1779888813911",
+      "title": "Penerimaan Bahan Baku Datang",
+      "message": "Bahan baku Buncis (1080 kg) dari nan bahan baku Buncis tiba di gudang.",
+      "type": "info",
+      "timestamp": "2026-05-27T13:33:33.911Z",
+      "read": true
+    },
+    {
+      "id": "N1779888648041",
+      "title": "Pengajuan Bahan Baku Baru",
+      "message": "Diajukan pengadaan Wortel sebanyak 154 kg ke Kepala Tani.",
+      "type": "info",
+      "timestamp": "2026-05-27T13:30:48.041Z",
+      "read": true
+    },
+    {
+      "id": "N1779888578622",
+      "title": "Produksi Order Selesai",
+      "message": "Order ORD-003 untuk komoditas Jagung Manis siap kirim.",
+      "type": "success",
+      "timestamp": "2026-05-27T13:29:38.622Z",
+      "read": true
+    },
+    {
+      "id": "N1779888575846",
+      "title": "Produksi Order Selesai",
+      "message": "Order ORD-002 untuk komoditas Buncis siap kirim.",
+      "type": "success",
+      "timestamp": "2026-05-27T13:29:35.846Z",
+      "read": true
+    },
+    {
+      "id": "N01",
+      "title": "Order Baru Masuk",
+      "message": "SBU Bandung mengirimkan permintaan baru: Sayuran Mix 300 Kg (ORD-004)",
+      "type": "info",
+      "timestamp": "2026-05-27T11:00:00Z",
+      "read": true
+    },
+    {
+      "id": "N02",
+      "title": "Selisih Berat Timbang",
+      "message": "Gudang mendeteksi kekurangan -15 kg pada pengiriman Buncis RCV-002!",
+      "type": "warn",
+      "timestamp": "2026-05-26T08:20:00Z",
+      "read": true
+    }
+  ],
+  "logs": [
+    {
+      "id": "L1779898697722-594",
+      "username": "admin",
+      "role": "Admin Gudang",
+      "action": "CLEAR_IMAGE_DATABASE",
+      "details": "Menghapus seluruh database gambar (foto bahan baku dan foto qc-checklist) dari sistem.",
+      "timestamp": "2026-05-27T16:18:17.722Z",
+      "ipAddress": "127.0.0.1"
+    }
+  ],
+  "photos": [
+    {
+      "id": "IMG-001",
+      "filename": "penerimaan_REQ-006_1780465125223.jpg",
+      "filepath": "/storage/penerimaan/penerimaan_REQ-006_1780465125223.jpg",
+      "timestamp": "2026-06-03T05:38:44.951Z",
+      "username": "admin",
+      "role": "Admin Gudang",
+      "module": "Penerimaan",
+      "transactionId": "REQ-006",
+      "deviceInfo": "Desktop Station (Win32) - Chrome Engine",
+      "geolocation": "-6.894464, 107.614594 (Valid GPS Coords)",
+      "farmerName": "Pemesanan bahan baku Buncis segar (Order SBU AGP-ORD-2026-001) sesuai hasil hitung saringan susut untuk target SBU 200 Kg.",
+      "commodity": "Wortel, Buncis",
+      "caption": "Foto Penerimaan Lapangan PO REQ-006 - Wortel, Buncis"
+    },
+    {
+      "id": "IMG-002",
+      "filename": "penerimaan_REQ-006_1780465125223.jpg",
+      "filepath": "/storage/penerimaan/penerimaan_REQ-006_1780465125223.jpg",
+      "timestamp": "2026-06-03T05:38:44.951Z",
+      "username": "admin",
+      "role": "Admin Gudang",
+      "module": "Penerimaan",
+      "transactionId": "AGP-RCV-2026-001",
+      "deviceInfo": "Desktop Station (Win32) - Chrome Engine",
+      "geolocation": "-6.894464, 107.614594 (Valid GPS Coords)",
+      "farmerName": "Pemesanan bahan baku Buncis segar (Order SBU AGP-ORD-2026-001) sesuai hasil hitung saringan susut untuk target SBU 200 Kg.",
+      "commodity": "Wortel, Buncis",
+      "caption": "Foto Penerimaan AGP-RCV-2026-001 - Wortel, Buncis"
+    },
+    {
+      "id": "IMG-003",
+      "filename": "qc_QC-006_1780465227459.jpg",
+      "filepath": "/storage/qc/qc_QC-006_1780465227459.jpg",
+      "timestamp": "2026-06-03T05:40:15.519Z",
+      "username": "admin",
+      "role": "Admin Gudang",
+      "module": "QC",
+      "transactionId": "QC-006",
+      "deviceInfo": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Sa - WebUSB Lab Cam v2",
+      "geolocation": "S 7° 58' 12\" E 112° 37' 41\" (Lab QC Malang Timur)",
+      "farmerName": "",
+      "commodity": "Wortel, Buncis",
+      "caption": "Foto QC QC-006 - Wortel, Buncis (PASSED)"
+    }
+  ],
+  "documents": [
+    {
+      "id": "DOC-001",
+      "docNumber": "FPPB/AP/2026/001",
+      "orderId": "ORD-001",
+      "pdfPath": "/storage/documents/FPPB_ORD-001_seeded.pdf",
+      "generateDate": "2026-05-24T08:00:00Z",
+      "generatedBy": "admin",
+      "generatedByRole": "Admin Gudang",
+      "status": "Selesai",
+      "notes": "Mohon dikirimkan dalam kondisi beku menggunakan cold storage logistik.",
+      "items": [
+        {
+          "commodity": "Wortel",
+          "packaging": "1 Kg",
+          "packageWeight": 1,
+          "quantity": 500,
+          "totalWeight": 500,
+          "harga": 15000,
+          "totalPrice": 7500000
+        }
+      ],
+      "totalQty": 500,
+      "subTotal": 7500000,
+      "grandTotal": 7500000,
+      "divisi": "SBU Bandung - Divisi Logistics & Food Retail",
+      "alamat": "Jl. Kinanti No. 26 Kota Bandung",
+      "tanggalDiterima": "2026-05-24"
+    },
+    {
+      "id": "DOC-002",
+      "docNumber": "FPPB/AP/2026/002",
+      "orderId": "ORD-002",
+      "pdfPath": "/storage/documents/FPPB_ORD-002_seeded.pdf",
+      "generateDate": "2026-05-25T09:30:00Z",
+      "generatedBy": "admin",
+      "generatedByRole": "Admin Gudang",
+      "status": "Selesai",
+      "notes": "Mohon dikirimkan dalam kondisi beku menggunakan cold storage logistik.",
+      "items": [
+        {
+          "commodity": "Buncis",
+          "packaging": "2.5 Kg",
+          "packageWeight": 2.5,
+          "quantity": 400,
+          "totalWeight": 1000,
+          "harga": 45012.5,
+          "totalPrice": 18000000
+        }
+      ],
+      "totalQty": 400,
+      "subTotal": 18000000,
+      "grandTotal": 18000000,
+      "divisi": "SBU Bandung - Divisi Logistics & Food Retail",
+      "alamat": "Jl. Kinanti No. 26 Kota Bandung",
+      "tanggalDiterima": "2026-05-25"
+    },
+    {
+      "id": "DOC-003",
+      "docNumber": "FPPB/AP/2026/003",
+      "orderId": "ORD-003",
+      "pdfPath": "/storage/documents/FPPB_ORD-003_seeded.pdf",
+      "generateDate": "2026-05-26T10:15:00Z",
+      "generatedBy": "admin",
+      "generatedByRole": "Admin Gudang",
+      "status": "Selesai",
+      "notes": "Mohon dikirimkan dalam kondisi beku menggunakan cold storage logistik.",
+      "items": [
+        {
+          "commodity": "Jagung Manis",
+          "packaging": "Custom",
+          "packageWeight": 5,
+          "quantity": 100,
+          "totalWeight": 500,
+          "harga": 110000,
+          "totalPrice": 11000000
+        }
+      ],
+      "totalQty": 100,
+      "subTotal": 11000000,
+      "grandTotal": 11000000,
+      "divisi": "SBU Bandung - Divisi Logistics & Food Retail",
+      "alamat": "Jl. Kinanti No. 26 Kota Bandung",
+      "tanggalDiterima": "2026-05-26"
+    },
+    {
+      "id": "DOC-004",
+      "docNumber": "FPPB/AP/2026/004",
+      "orderId": "ORD-004",
+      "pdfPath": "/storage/documents/FPPB_ORD-004_seeded.pdf",
+      "generateDate": "2026-05-27T11:00:00Z",
+      "generatedBy": "admin",
+      "generatedByRole": "Admin Gudang",
+      "status": "Selesai",
+      "notes": "Mohon dikirimkan dalam kondisi beku menggunakan cold storage logistik.",
+      "items": [
+        {
+          "commodity": "Sayuran Mix",
+          "packaging": "1 Kg",
+          "packageWeight": 1,
+          "quantity": 300,
+          "totalWeight": 300,
+          "harga": 20000,
+          "totalPrice": 6000000
+        }
+      ],
+      "totalQty": 300,
+      "subTotal": 6000000,
+      "grandTotal": 6000000,
+      "divisi": "SBU Bandung - Divisi Logistics & Food Retail",
+      "alamat": "Jl. Kinanti No. 26 Kota Bandung",
+      "tanggalDiterima": "2026-05-27"
+    },
+    {
+      "id": "DOC-005",
+      "docNumber": "FPPB/AP/2026/005",
+      "orderId": "ORD-005",
+      "pdfPath": "/storage/documents/FPPB_ORD-005_seeded.pdf",
+      "generateDate": "2026-05-27T15:02:08.804Z",
+      "generatedBy": "admin",
+      "generatedByRole": "Admin Gudang",
+      "status": "Selesai",
+      "notes": "Mohon dikirimkan dalam kondisi beku menggunakan cold storage logistik.",
+      "items": [
+        {
+          "commodity": "Wortel",
+          "packaging": "2.5 Kg",
+          "packageWeight": 2.5,
+          "quantity": 100,
+          "totalWeight": 250,
+          "harga": 37500,
+          "totalPrice": 3750000
+        }
+      ],
+      "totalQty": 100,
+      "subTotal": 3750000,
+      "grandTotal": 3750000,
+      "divisi": "SBU Bandung - Divisi Logistics & Food Retail",
+      "alamat": "Jl. Kinanti No. 26 Kota Bandung",
+      "tanggalDiterima": "2026-05-27"
+    },
+    {
+      "id": "DOC-006",
+      "docNumber": "FPPB/AP/2026/006",
+      "orderId": "ORD-006",
+      "pdfPath": "/storage/documents/FPPB_ORD-006_seeded.pdf",
+      "generateDate": "2026-05-27T16:15:00.000Z",
+      "generatedBy": "admin",
+      "generatedByRole": "Admin Gudang",
+      "status": "Draft",
+      "notes": "Mohon dikirimkan dalam kondisi beku menggunakan cold storage logistik.",
+      "items": [
+        {
+          "commodity": "Wortel",
+          "packaging": "Vacuum Nylon Bag Premium (1 Kg)",
+          "packageWeight": 1,
+          "quantity": 150,
+          "totalWeight": 150,
+          "harga": 15000,
+          "totalPrice": 2250000
+        },
+        {
+          "commodity": "Buncis",
+          "packaging": "PE Plastic High-Density (HDPE) (2.5 Kg)",
+          "packageWeight": 2.5,
+          "quantity": 100,
+          "totalWeight": 250,
+          "harga": 45000,
+          "totalPrice": 4500000
+        }
+      ],
+      "totalQty": 250,
+      "subTotal": 6750000,
+      "grandTotal": 6750000,
+      "divisi": "SBU Bandung - Divisi Logistics & Food Retail",
+      "alamat": "Jl. Kinanti No. 26 Kota Bandung",
+      "tanggalDiterima": "2026-05-27"
+    },
+    {
+      "id": "DOC-007",
+      "docNumber": "FPPB/AP/2026/007",
+      "orderId": "ORD-007",
+      "pdfPath": "/storage/documents/FPPB_ORD-007_seeded.pdf",
+      "generateDate": "2026-06-16T09:13:10.910Z",
+      "generatedBy": "admin",
+      "generatedByRole": "Admin Gudang",
+      "status": "Siap Produksi",
+      "notes": "Mohon dikirimkan dalam kondisi beku menggunakan cold storage logistik.",
+      "items": [
+        {
+          "commodity": "Jagung Manis",
+          "packaging": "Karton Box Corrugated (Grosir) (10 Kg)",
+          "packageWeight": 10,
+          "quantity": 50,
+          "totalWeight": 500,
+          "harga": 220000,
+          "totalPrice": 11000000
+        },
+        {
+          "commodity": "Sayuran Mix",
+          "packaging": "Vacuum Nylon Bag Premium (1 Kg)",
+          "packageWeight": 1,
+          "quantity": 200,
+          "totalWeight": 200,
+          "harga": 20000,
+          "totalPrice": 4000000
+        }
+      ],
+      "totalQty": 250,
+      "subTotal": 15000000,
+      "grandTotal": 15000000,
+      "divisi": "SBU Bandung - Divisi Logistics & Food Retail",
+      "alamat": "Jl. Kinanti No. 26 Kota Bandung",
+      "tanggalDiterima": "2026-05-27"
+    },
+    {
+      "id": "DOC-008",
+      "docNumber": "FPPB/AP/2026/008",
+      "orderId": "ORD-008",
+      "pdfPath": "/storage/documents/FPPB_ORD-008_seeded.pdf",
+      "generateDate": "2026-05-27T16:20:00.000Z",
+      "generatedBy": "admin",
+      "generatedByRole": "Admin Gudang",
+      "status": "Selesai",
+      "notes": "Mohon dikirimkan dalam kondisi beku menggunakan cold storage logistik.",
+      "items": [
+        {
+          "commodity": "Buncis",
+          "packaging": "Vacuum Nylon Bag Premium (2.5 Kg)",
+          "packageWeight": 2.5,
+          "quantity": 120,
+          "totalWeight": 300,
+          "harga": 45000,
+          "totalPrice": 5400000
+        },
+        {
+          "commodity": "Wortel",
+          "packaging": "Vacuum Nylon Bag Premium (2.5 Kg)",
+          "packageWeight": 2.5,
+          "quantity": 80,
+          "totalWeight": 200,
+          "harga": 37500,
+          "totalPrice": 3000000
+        }
+      ],
+      "totalQty": 200,
+      "subTotal": 8400000,
+      "grandTotal": 8400000,
+      "divisi": "SBU Bandung - Divisi Logistics & Food Retail",
+      "alamat": "Jl. Kinanti No. 26 Kota Bandung",
+      "tanggalDiterima": "2026-05-27"
+    },
+    {
+      "id": "DOC-009",
+      "docNumber": "FPPB/AP/2026/009",
+      "orderId": "ORD-009",
+      "pdfPath": "/storage/documents/FPPB_ORD-009_seeded.pdf",
+      "generateDate": "2026-05-27T16:10:00.000Z",
+      "generatedBy": "admin",
+      "generatedByRole": "Admin Gudang",
+      "status": "Selesai",
+      "notes": "Mohon dikirimkan dalam kondisi beku menggunakan cold storage logistik.",
+      "items": [
+        {
+          "commodity": "Sayuran Mix",
+          "packaging": "Karton Box Corrugated (Grosir) (5 Kg)",
+          "packageWeight": 5,
+          "quantity": 120,
+          "totalWeight": 600,
+          "harga": 100000,
+          "totalPrice": 12000000
+        }
+      ],
+      "totalQty": 120,
+      "subTotal": 12000000,
+      "grandTotal": 12000000,
+      "divisi": "SBU Bandung - Divisi Logistics & Food Retail",
+      "alamat": "Jl. Kinanti No. 26 Kota Bandung",
+      "tanggalDiterima": "2026-05-27"
+    },
+    {
+      "id": "DOC-010",
+      "docNumber": "FPPB/AP/2026/001",
+      "orderId": "AGP-ORD-2026-001",
+      "pdfPath": "/storage/documents/FPPB_AGP-ORD-2026-001_1780464900859.pdf",
+      "generateDate": "2026-06-03T05:35:00.887Z",
+      "generatedBy": "admin",
+      "generatedByRole": "Admin Gudang",
+      "status": "Menunggu Konfirmasi",
+      "notes": "Mohon dikirimkan dalam kondisi beku suhu -18°C menggunakan kontainer berpendingin.",
+      "items": [
+        {
+          "commodity": "Wortel",
+          "packaging": "Kemasan 2.5 kg",
+          "packageWeight": 2.5,
+          "quantity": 100,
+          "totalWeight": 250,
+          "nama_komoditas": "Wortel",
+          "qty_pack": 100,
+          "berat_kemasan": 2.5,
+          "total_berat": 250,
+          "harga": 37500,
+          "totalPrice": 3750000
+        },
+        {
+          "commodity": "Buncis",
+          "packaging": "Kemasan 2.5 kg",
+          "packageWeight": 2.5,
+          "quantity": 80,
+          "totalWeight": 200,
+          "nama_komoditas": "Buncis",
+          "qty_pack": 80,
+          "berat_kemasan": 2.5,
+          "total_berat": 200,
+          "harga": 45000,
+          "totalPrice": 3600000
+        }
+      ],
+      "totalQty": 180,
+      "subTotal": 7350000,
+      "grandTotal": 7350000,
+      "divisi": "SBU Bandung - Divisi Logistics & Food Retail",
+      "alamat": "Jl. Kinanti No. 26 Kota Bandung",
+      "tanggalDiterima": "2026-06-10"
+    }
+  ]
+}

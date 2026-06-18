@@ -1,0 +1,32 @@
+{
+  "name": "gudang-fullstack",
+  "version": "1.0.0",
+  "description": "Root workspace for Agro Jabar Gudang Fullstack",
+  "scripts": {
+    "dev": "npx concurrently -k -n \"backend,frontend\" -c \"cyan,emerald\" \"npm run dev --prefix backend\" \"npx wait-on http://localhost:5005/health && npm run dev --prefix frontend\"",
+    "db:seed": "npm run db:seed --prefix backend",
+    "prisma:generate": "npm run prisma:generate --prefix backend",
+    "prepare": "husky",
+    "commit": "node scripts/commit.js"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-customizable"
+    },
+    "cz-customizable": {
+      "config": ".cz-config.js"
+    }
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^21.0.2",
+    "@commitlint/config-conventional": "^21.0.2",
+    "commitizen": "^4.3.2",
+    "concurrently": "^8.2.2",
+    "cross-env": "^10.1.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "cz-customizable": "^7.5.4",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.4.0",
+    "wait-on": "^7.2.0"
+  }
+}

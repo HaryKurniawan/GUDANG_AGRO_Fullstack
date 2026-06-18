@@ -1,0 +1,8 @@
+{
+  "frontend/**/*.{js,jsx,ts,tsx}": [
+    "npm run lint --prefix frontend --"
+  ],
+  "backend/**/*.{js,jsx,ts,tsx}": [
+    "npm run lint --prefix backend --"
+  ]
+}

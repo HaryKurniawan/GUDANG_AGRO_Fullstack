@@ -1,0 +1,1 @@
+node -e "require('child_process').execSync('npm run build --prefix backend', {stdio: 'inherit'})"

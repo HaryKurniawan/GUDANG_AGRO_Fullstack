@@ -1,0 +1,11 @@
+{
+  "name": "Remix: Remix: Frozen Vegetable WMS",
+  "description": "Produksi Agro Jabar",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* ==========================================================================
+   SLEEK INTERFACE CUSTOM THEME OVERRIDES (PT. FROZEN WEST VEGETABLES)
+   ========================================================================== */
+
+body {
+  background-color: #f8fafc !important; /* bg-slate-50 */
+  color: #0f172a !important; /* text-slate-900 */
+  font-family: "Inter", var(--font-sans), sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Outer layout wrapper */
+.sleek-theme {
+  background-color: #f1f5f9 !important; /* bg-slate-100 */
+  color: #1e293b !important;
+}
+
+/* Sidebar Specifics (always remains elegant dark as requested) */
+.sleek-theme aside {
+  background-color: #0f172a !important; /* bg-slate-900 */
+  color: #f1f5f9 !important;
+  border-color: #1e293b !important;
+}
+
+.sleek-theme aside .bg-slate-850 {
+  background-color: #1e293b !important;
+  border-color: #334155 !important;
+}
+
+.sleek-theme aside button {
+  color: #94a3b8 !important;
+}
+
+.sleek-theme aside button:hover {
+  background-color: #1e293b !important;
+  color: #ffffff !important;
+}
+
+.sleek-theme aside button.bg-emerald-500\/10 {
+  background-color: rgba(16, 185, 129, 0.1) !important;
+  color: #34d399 !important;
+  border-color: #10b981 !important;
+}
+
+/* Core main container wrapper */
+.sleek-theme main {
+  background-color: #f8fafc !important; /* bg-slate-50 */
+  color: #0f172a !important;
+}
+
+/* Title headings styling */
+.sleek-theme h1,
+.sleek-theme h2,
+.sleek-theme h3,
+.sleek-theme h4 {
+  font-family: "Space Grotesk", var(--font-display), sans-serif;
+  color: #0f172a !important;
+  letter-spacing: -0.02em;
+}
+
+/* Convert dark generic cards to sleek white cards */
+.sleek-theme main .bg-slate-900,
+.sleek-theme main .bg-slate-910,
+.sleek-theme main .bg-slate-955,
+.sleek-theme main .bg-[#0a0f1d],
+.sleek-theme main .bg-[#0e1726],
+.sleek-theme main .bg-slate-950\/20,
+.sleek-theme main .bg-slate-950\/40,
+.sleek-theme main .bg-slate-900\/60,
+.sleek-theme main .bg-slate-900\/40 {
+  background-color: #ffffff !important;
+  color: #1e293b !important;
+  border: 1px solid #e2e8f0 !important; /* border-slate-200 */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.02) !important; /* shadow-sm */
+  border-radius: 1rem !important; /* rounded-2xl */
+}
+
+/* Secondary nested sub-cards or badges */
+.sleek-theme main .bg-slate-950,
+.sleek-theme main .bg-slate-850,
+.sleek-theme main .bg-slate-805,
+.sleek-theme main .bg-slate-950\/60 {
+  background-color: #f1f5f9 !important; /* bg-slate-100 */
+  color: #334155 !important; /* text-slate-705 */
+  border: 1px solid #e2e8f0 !important; /* border-slate-200 */
+  border-radius: 0.75rem !important; /* rounded-xl */
+}
+
+/* Text color defaults inside main area */
+.sleek-theme main p,
+.sleek-theme main span:not(.font-mono):not(.text-white),
+.sleek-theme main li {
+  color: #475569 !important; /* text-slate-600 */
+}
+
+.sleek-theme main .text-slate-100,
+.sleek-theme main .text-slate-200,
+.sleek-theme main .text-white {
+  color: #0f172a !important; /* deep slate-900 */
+}
+
+.sleek-theme main .text-slate-300,
+.sleek-theme main .text-slate-400 {
+  color: #475569 !important; /* text-slate-600 */
+}
+
+/* Keep warning and error colors clear but readable in light mode */
+.sleek-theme main .bg-rose-950\/40,
+.sleek-theme main .bg-rose-950\/25,
+.sleek-theme main .bg-rose-950\/20,
+.sleek-theme main .bg-rose-950 {
+  background-color: #fef2f2 !important; /* bg-rose-50 */
+  color: #991b1b !important; /* text-rose-800 */
+  border: 1px solid #fee2e2 !important; /* border-rose-200 */
+}
+
+.sleek-theme main .text-rose-400 {
+  color: #dc2626 !important;
+}
+
+.sleek-theme main .bg-emerald-950\/30,
+.sleek-theme main .bg-emerald-950\/20,
+.sleek-theme main .bg-emerald-950 {
+  background-color: #ecfdf5 !important; /* bg-emerald-50 */
+  color: #065f46 !important; /* text-emerald-800 */
+  border: 1px solid #d1fae5 !important; /* border-emerald-200 */
+}
+
+.sleek-theme main .text-emerald-400 {
+  color: #059669 !important;
+}
+
+/* Inputs, Select dropdowns, and Textareas */
+.sleek-theme main input[type="text"],
+.sleek-theme main input[type="number"],
+.sleek-theme main input[type="password"],
+.sleek-theme main input[type="datetime-local"],
+.sleek-theme main select,
+.sleek-theme main textarea {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  border: 1px solid #cbd5e1 !important; /* border-slate-300 */
+  border-radius: 0.5rem !important; /* rounded-lg */
+  padding: 0.5rem 0.75rem !important;
+  transition: all 150ms ease !important;
+}
+
+.sleek-theme main input:focus,
+.sleek-theme main select:focus,
+.sleek-theme main textarea:focus {
+  border-color: #10b981 !important; /* border-emerald-500 */
+  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.1) !important;
+  outline: none !important;
+}
+
+/* Standard tables styling in sleek theme */
+.sleek-theme main table {
+  background-color: #ffffff !important;
+  border-collapse: collapse !important;
+  border-radius: 1rem !important;
+  overflow: hidden !important;
+  width: 100% !important;
+}
+
+.sleek-theme main thead {
+  background-color: #f8fafc !important; /* Slate 50 background */
+}
+
+.sleek-theme main thead th {
+  color: #475569 !important; /* text-slate-600 */
+  border-bottom: 2px solid #e2e8f0 !important; /* border-slate-200 */
+  font-weight: 600 !important;
+  font-size: 0.75rem !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+  padding: 0.75rem 1.5rem !important;
+}
+
+.sleek-theme main tbody tr {
+  border-bottom: 1px solid #f1f5f9 !important; /* thin separation lines */
+  transition: background-color 155ms ease !important;
+}
+
+.sleek-theme main tbody tr:hover {
+  background-color: #f8fafc !important;
+}
+
+.sleek-theme main tbody td {
+  padding: 1rem 1.5rem !important;
+  color: #334155 !important;
+  font-size: 0.875rem !important;
+}
+
+/* Font Mono override to make it ultra premium */
+.sleek-theme .font-mono {
+  font-family: "JetBrains Mono", var(--font-mono), monospace !important;
+  font-size: 0.8em !important;
+  color: #475569 !important;
+}
+
+/* Recharts integration grid styles */
+.sleek-theme .recharts-cartesian-grid-horizontal line,
+.sleek-theme .recharts-cartesian-grid-vertical line {
+  stroke: #f1f5f9 !important;
+}
+
+.sleek-theme .recharts-text {
+  fill: #64748b !important;
+  font-size: 11px !important;
+}
+
+.sleek-theme .recharts-legend-item-text {
+  color: #475569 !important;
+}
+
+.sleek-theme .recharts-tooltip-cursor {
+  fill: #f1f5f9 !important;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}

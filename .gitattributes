@@ -1,0 +1,5 @@
+# Force LF for shell scripts (Husky hooks)
+.husky/* text eol=lf
+
+# Auto detect text files
+* text=auto
