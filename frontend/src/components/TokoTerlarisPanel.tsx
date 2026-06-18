@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Package, TrendingUp, Trophy, AlertCircle, Loader2, Sparkles } from 'lucide-react';
+import { Package, TrendingUp, Trophy, Loader2, Sparkles } from 'lucide-react';
 import { analyticsApi, GudangTokoKategoriTerlaris, GudangTokoTerlarisItem } from '../api/analytics';
 
 interface TokoTerlarisPanelProps {

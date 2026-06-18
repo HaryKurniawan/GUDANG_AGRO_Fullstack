@@ -56,7 +56,7 @@ const GudangListPage: React.FC = () => {
     }
   };
 
-  const handleDelete = async (id: string, nama: string) => {
+  const handleDelete = async (_id: string, nama: string) => {
     if (!window.confirm(`Apakah Anda yakin ingin menghapus gudang "${nama}"?`)) {
       return;
     }

@@ -11,7 +11,6 @@ import {
   Spin,
   Popconfirm,
   Tag,
-  InputNumber,
 } from 'antd';
 import { DeleteOutlined, EditOutlined, PlusOutlined } from '@ant-design/icons';
 import {
@@ -146,7 +145,7 @@ const AfiliasiManagePage: React.FC = () => {
     }
   };
 
-  const columns = [
+  const columns: any[] = [
     {
       title: 'Nama Petani',
       dataIndex: 'petaniNama',
@@ -165,7 +164,7 @@ const AfiliasiManagePage: React.FC = () => {
       dataIndex: ['gudang', 'nama'],
       key: 'gudangNama',
       width: 150,
-      render: (text: string, record: any) => (
+      render: (_: any, record: any) => (
         <div>
           <div>{record.gudang?.nama}</div>
           <small style={{ color: '#999' }}>{record.gudangId}</small>
@@ -201,7 +200,7 @@ const AfiliasiManagePage: React.FC = () => {
       key: 'action',
       width: 120,
       fixed: 'right',
-      render: (_, record: any) => (
+      render: (_: any, record: any) => (
         <Space>
           <Button
             type="link"
