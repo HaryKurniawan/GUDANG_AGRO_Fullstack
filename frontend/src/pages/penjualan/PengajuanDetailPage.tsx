@@ -555,6 +555,29 @@ const PengajuanDetailPage: React.FC = () => {
             </div>
           </div>
 
+          {/* Pengiriman Grosir Langsung */}
+          {request.isPesananGrosir && request.lat && request.lng && (
+            <div className="bg-white border border-emerald-200 rounded-2xl p-5 shadow-sm space-y-3">
+              <h3 className="text-[11px] font-bold text-emerald-600 uppercase tracking-wider border-b border-emerald-100 pb-2 flex items-center gap-2">
+                <Truck className="w-3.5 h-3.5" />
+                Pengiriman Langsung (Grosir)
+              </h3>
+              <div className="text-xs text-slate-700 font-medium mb-3 leading-relaxed">
+                {request.alamatKirim || 'Alamat tidak tersedia'}
+              </div>
+              <div className="rounded-xl overflow-hidden h-48 border border-slate-200 relative bg-slate-50">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  frameBorder="0"
+                  style={{ border: 0 }}
+                  src={`https://maps.google.com/maps?q=${request.lat},${request.lng}&t=&z=15&ie=UTF8&iwloc=&output=embed`}
+                  allowFullScreen
+                ></iframe>
+              </div>
+            </div>
+          )}
+
           {/* Tindakan */}
           <div className="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-4">
             <h3 className="text-[11px] font-bold text-slate-500 uppercase tracking-wider border-b border-slate-100 pb-2">

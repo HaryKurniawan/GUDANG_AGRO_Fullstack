@@ -41,6 +41,11 @@ interface StockRequest {
   status: string;
   modePengemasan?: string | null;
   catatan?: string | null;
+  isPesananGrosir?: boolean | null;
+  alamatKirim?: string | null;
+  lat?: number | null;
+  lng?: number | null;
+  konsumenId?: string | null;
   createdAt?: Date;
   updatedAt?: Date;
   gudang?: unknown;
@@ -56,6 +61,11 @@ export const formatStockRequest = (request: StockRequest, itemsWithConfig?: Stoc
     status: request.status,
     modePengemasan: request.modePengemasan || 'DEFAULT',
     catatan: request.catatan,
+    isPesananGrosir: request.isPesananGrosir || false,
+    alamatKirim: request.alamatKirim,
+    lat: request.lat,
+    lng: request.lng,
+    konsumenId: request.konsumenId,
     createdAt: request.createdAt,
     updatedAt: request.updatedAt,
     gudang: request.gudang,

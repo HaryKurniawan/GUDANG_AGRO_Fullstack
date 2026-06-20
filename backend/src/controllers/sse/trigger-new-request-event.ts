@@ -12,7 +12,7 @@ export const triggerNewRequestEvent = async (req: Request, res: Response) => {
       return res.status(401).json({ message: 'API Key tidak valid' });
     }
 
-    const { gudangId, pengajuanId, tokoId, tokoNama, catatan, items, message } = req.body;
+    const { gudangId, pengajuanId, tokoId, tokoNama, catatan, items, message, isPesananGrosir, alamatKirim, lat, lng, konsumenId } = req.body;
 
     if (!gudangId || !pengajuanId || !tokoId || !items) {
       return res.status(400).json({ message: 'Parameter tidak lengkap: membutuhkan gudangId, pengajuanId, tokoId, dan items' });
@@ -25,6 +25,11 @@ export const triggerNewRequestEvent = async (req: Request, res: Response) => {
       update: {
         catatan,
         status: 'DIAJUKAN',
+        isPesananGrosir: isPesananGrosir || false,
+        alamatKirim,
+        lat,
+        lng,
+        konsumenId,
       },
       create: {
         id: pengajuanId,
@@ -33,6 +38,11 @@ export const triggerNewRequestEvent = async (req: Request, res: Response) => {
         gudangId,
         catatan,
         status: 'DIAJUKAN',
+        isPesananGrosir: isPesananGrosir || false,
+        alamatKirim,
+        lat,
+        lng,
+        konsumenId,
         items: {
           create: items.map((item: { produkId: string; produkNama?: string; jumlahPermintaan: number }) => ({
             produkId: item.produkId,
