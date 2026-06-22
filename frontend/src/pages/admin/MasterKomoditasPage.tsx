@@ -45,7 +45,7 @@ const MasterKomoditasPage: React.FC = () => {
     try {
       setLoading(true);
       setError(null);
-      const response = await fetch('http://localhost:5005/api/master-komoditas/admin', {
+      const response = await fetch((import.meta.env.VITE_API_URL || 'http://localhost:5005/api') + '/master-komoditas/admin', {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -76,8 +76,8 @@ const MasterKomoditasPage: React.FC = () => {
     try {
       const method = editingId ? 'PUT' : 'POST';
       const url = editingId
-        ? `http://localhost:5005/api/master-komoditas/admin/${editingId}`
-        : 'http://localhost:5005/api/master-komoditas/admin';
+        ? `${import.meta.env.VITE_API_URL || (import.meta.env.VITE_API_URL || 'http://localhost:5005/api')}/master-komoditas/admin/${editingId}`
+        : (import.meta.env.VITE_API_URL || 'http://localhost:5005/api') + '/master-komoditas/admin';
 
       const response = await fetch(url, {
         method,
@@ -123,7 +123,7 @@ const MasterKomoditasPage: React.FC = () => {
     }
 
     try {
-      const response = await fetch(`http://localhost:5005/api/master-komoditas/admin/${id}`, {
+      const response = await fetch(`${import.meta.env.VITE_API_URL || (import.meta.env.VITE_API_URL || 'http://localhost:5005/api')}/master-komoditas/admin/${id}`, {
         method: 'DELETE',
         headers: {
           Authorization: `Bearer ${token}`,
@@ -144,7 +144,7 @@ const MasterKomoditasPage: React.FC = () => {
 
   const handleToggleStatus = async (id: string, currentStatus: boolean) => {
     try {
-      const response = await fetch(`http://localhost:5005/api/master-komoditas/admin/${id}/status`, {
+      const response = await fetch(`${import.meta.env.VITE_API_URL || (import.meta.env.VITE_API_URL || 'http://localhost:5005/api')}/master-komoditas/admin/${id}/status`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',

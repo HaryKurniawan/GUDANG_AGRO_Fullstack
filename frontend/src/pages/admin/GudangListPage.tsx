@@ -35,7 +35,7 @@ const GudangListPage: React.FC = () => {
       setError(null);
       
       // GET /api/gudang is now public, but we can include token if available
-      const response = await fetch('http://localhost:5005/api/gudang', {
+      const response = await fetch((import.meta.env.VITE_API_URL || 'http://localhost:5005/api') + '/gudang', {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',

@@ -34,7 +34,7 @@ const KomoditasReadOnlyPage: React.FC = () => {
     try {
       setLoading(true);
       setError(null);
-      const response = await fetch('http://localhost:5005/api/master-komoditas/public/all', {
+      const response = await fetch((import.meta.env.VITE_API_URL || 'http://localhost:5005/api') + '/master-komoditas/public/all', {
         headers: {
           Authorization: `Bearer ${token}`,
         },

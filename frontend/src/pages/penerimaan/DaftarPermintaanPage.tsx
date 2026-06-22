@@ -8,7 +8,7 @@ import {
 } from 'lucide-react';
 import { useAuthStore } from '../../store/authStore';
 
-const API = 'http://localhost:5005/api';
+const API = (import.meta.env.VITE_API_URL || 'http://localhost:5005/api');
 
 const fmtKg = (n: number) => n >= 1000 ? `${(n / 1000).toFixed(1)}t` : `${n.toFixed(1)}kg`;
 const fmtRp = (n: number) => n >= 1_000_000

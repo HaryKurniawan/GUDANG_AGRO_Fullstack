@@ -26,7 +26,7 @@ export const useSSE = () => {
     // check req.query.token as a fallback! That is extremely smart!
     // Let's implement req.query.token check in auth.middleware.ts later, but for now we connect with:
     const eventSource = new EventSource(
-      `http://localhost:5005/api/events/pengajuan?token=${token}`
+      `${import.meta.env.VITE_API_URL || (import.meta.env.VITE_API_URL || 'http://localhost:5005/api')}/events/pengajuan?token=${token}`
     );
 
     eventSource.onmessage = (event) => {

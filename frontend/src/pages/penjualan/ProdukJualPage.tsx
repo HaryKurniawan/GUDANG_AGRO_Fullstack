@@ -598,7 +598,7 @@ const ProdukJualPage: React.FC = () => {
 
   const fetchKomoditas = useCallback(async () => {
     try {
-      const res = await fetch('http://localhost:5005/api/master-komoditas/public/all');
+      const res = await fetch((import.meta.env.VITE_API_URL || 'http://localhost:5005/api') + '/master-komoditas/public/all');
       const json = await res.json();
       setKomoditasList((json.data || []).filter((k: MasterKomoditas) => k.isActive));
     } catch (err) {

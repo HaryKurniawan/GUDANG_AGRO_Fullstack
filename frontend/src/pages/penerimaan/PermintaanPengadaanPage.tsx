@@ -17,7 +17,7 @@ import {
 } from 'lucide-react';
 import { useAuthStore } from '../../store/authStore';
 
-const API = 'http://localhost:5005/api';
+const API = (import.meta.env.VITE_API_URL || 'http://localhost:5005/api');
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 interface DemandItem {

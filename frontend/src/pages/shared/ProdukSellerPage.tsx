@@ -18,7 +18,7 @@ const ProdukSellerPage: React.FC = () => {
   const [error, setError] = useState('');
 
   const SELLER_FRONTEND_URL = import.meta.env.VITE_SELLER_FRONTEND_URL || 'http://localhost:3004';
-  const GUDANG_API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5005/api';
+  const GUDANG_API_URL = import.meta.env.VITE_API_URL || (import.meta.env.VITE_API_URL || 'http://localhost:5005/api');
 
   useEffect(() => {
     // Determine which gudangId to use
