@@ -196,6 +196,11 @@ model PengajuanStokToko {
   status             StatusPengajuanStok @default(DIAJUKAN)
   modePengemasan     ModePengemasan      @default(DEFAULT)
   catatan            String?
+  isPesananGrosir    Boolean             @default(false)
+  alamatKirim        String?
+  lat                Float?
+  lng                Float?
+  konsumenId         String?
   createdAt          DateTime            @default(now())
   updatedAt          DateTime            @updatedAt
   items              ItemPengajuanStok[]
