@@ -44,9 +44,9 @@ export const triggerNewRequestEvent = async (req: Request, res: Response) => {
         lng,
         konsumenId,
         items: {
-          create: items.map((item: { produkId: string; produkNama?: string; jumlahPermintaan: number }) => ({
-            produkId: item.produkId,
-            produkNama: item.produkNama || 'Produk',
+          create: items.map((item: any) => ({
+            produkId: item.produkId || item.produkGudangId,
+            produkNama: item.produkNama || item.namaProduk || 'Produk',
             jumlahPermintaan: item.jumlahPermintaan,
           })),
         },
